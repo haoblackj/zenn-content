@@ -3,7 +3,7 @@ title: "GitHub上に構築した小説執筆環境について"
 emoji: " 📖 "
 type: "tech"
 topics: ["GitHub","VSCode","VSCode拡張機能","textlint","Tech"]
-published: false
+published: true
 ---
 # 要点
 - 小説執筆環境を GitHub 上に整備した
