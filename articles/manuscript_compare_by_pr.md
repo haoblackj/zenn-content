@@ -2,7 +2,7 @@
 title: "Pull Request駆動で小説を開発する"
 emoji: "🇵🇷"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["GitHub","VSCode","VSCode拡張機能","textlint","Tech"]
+topics: ["GitHub","textlint","Tech","小説","GitHubActions"]
 published: false
 ---
 ##  謝辞
@@ -92,3 +92,49 @@ Pull Request はファイルごとに作成してもいいし、修正したい�
 Issue にするほどでもない課題でも、Pull Request のコメントなら気軽に書き込んでしまっていい。
 適当に作成して、適当に原稿を修正して、適当に情報を放り込んで、適当にマージする。
 マージしたあとも Pull Request 自体は閲覧できるから、適宜そこから必要な情報にアクセスすればよい。
+
+##  校正の場としての Pull Request
+先の記事で textlint を紹介した。
+https://www.npmjs.com/package/textlint
+VSCode を使っているなら、vscode-textlint を使って自動で赤入れをしてもらえばいい。
+https://marketplace.visualstudio.com/items?itemName=taichi.vscode-textlint
+だがブラウザから GitHub 上のファイルを操作する場合、そうはいかない。
+GitHub の提供する Web GUI では、textlint による校正を適用できないからだ。
+
+これを解決するのが、 GitHub Actions と Reviewdog である。
+:::message
+ブラウザに入力した文字列に対して textlint を適用する Chrome 拡張機能もあるが、今回は割愛する。
+:::
+
+### Reviewdog を飼う
+Reviewdog とは、text**lint** を含む各種 lint ツール(linter という)の吐いた結果を Pull Request にコメントしてくれる賢い犬だ。
+https://github.com/reviewdog/reviewdog
+
+Reviewdog をリポジトリに**飼う**ことで、ブラウザからの編集でも textlint の恩恵を受けられるのだ。
+
+### 導入手順
+1.  `.\github\workflow\reviewdog.yml` **を作成し、以下の内容をペースト**
+```yml:reviewdog.yml
+name: reviewdog
+on: [pull_request]
+jobs:
+  textlint:
+    name: runner / textlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: textlint-github-pr-review
+        uses: tsuyoshicho/action-textlint@v3
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          level: warning
+          textlint_flags: "episodes/**"
+```
+2.  **デフォルトブランチ(通常はmaster または main)に コミット & プッシュ**
+これで導入は完了だ。
+
+注意点として、導入完了後に作成された Pull Request から校正が走るという点だ。
+私はこれで30分ほど無駄にした。
