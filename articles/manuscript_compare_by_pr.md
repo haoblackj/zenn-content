@@ -1,6 +1,6 @@
 ---
 title: "Pull Request駆動で小説を開発する"
-emoji: "🇵🇷"
+emoji: "📜"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["GitHub","textlint","Tech","小説","GitHubActions"]
 published: true
