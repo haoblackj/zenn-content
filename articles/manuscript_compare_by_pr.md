@@ -155,6 +155,7 @@ https://github.com/fuji-nakahara/jekyll-deploy-shosetsu
 ↑のようなものもあるが、今も動くのかは定かではない。
 
 # 後書きに代えて
+
 実は、Git や GitHub を用いて小説を執筆するというテーマには元ネタがある。
 下に掲げる読書猿さんの記事だ。
 https://readingmonkey.blog.fc2.com/blog-entry-717.html
@@ -162,6 +163,7 @@ https://readingmonkey.blog.fc2.com/blog-entry-717.html
 私もこういった手法で工夫していたのだが、どうしても情報の一覧性に欠けるところがあった。
 一方で、情報を原稿と密に記録できるというメリットは捨てがたい。
 これを保ちつつ一覧性を確保するよう追求していった結果、GitHub に落ち着いた。
+
 
 他にも GitHub Actions で Issue を整理したり、集団で執筆する際に原稿レビューを自動で依頼するようにしたりしているが、それは本職開発者の方々がたっぷり記事を書いてくださっている。
 小説を書くという用途ならではの特色が見えたら、また記事にする予定だ。
