@@ -1,5 +1,5 @@
 - urls:
-    - https://zenn.dev/ikawaha/feed
+    - https://zenn.dev/haoblackj/feed
   template: |-
       **Zenn**
       {{range . -}}
