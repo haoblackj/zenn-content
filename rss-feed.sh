@@ -6,7 +6,7 @@ set -o pipefail
 set -o xtrace
 
 RESULT=$(
-  curl https://zenn.dev/captain_blue/feed 2>/dev/null |
+  curl https://zenn.dev/haoblackj/feed 2>/dev/null |
     grep -oE '(<title>.*?</title>|<link>.*?</link>)' |
     sed 1,4d |
     awk '{
