@@ -1,8 +1,0 @@
-- urls:
-    - https://zenn.dev/haoblackj/feed
-  template: |-
-      **Zenn**
-      {{range . -}}
-        * ![](./icon/zenn.png) [{{ .Title }}]({{ .Link }})
-      {{ end }}
-  limit: 5
