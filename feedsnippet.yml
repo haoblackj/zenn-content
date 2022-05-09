@@ -1,0 +1,8 @@
+- urls:
+    - https://zenn.dev/ikawaha/feed
+  template: |-
+      **Zenn**
+      {{range . -}}
+        * ![](./icon/zenn.png) [{{ .Title }}]({{ .Link }})
+      {{ end }}
+  limit: 5
