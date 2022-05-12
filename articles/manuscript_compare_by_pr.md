@@ -152,9 +152,6 @@ jobs:
           restore-keys: |
             node-
 
-      - name: Install textlint
-        run:  'npm install --save-dev textlint textlint-rule-preset-smarthr textlint-rule-prh textlint-filter-rule-allowlist textlint-rule-aws-spellcheck'
-
       - name: Execute textlint for Episode
         run: |
           npx textlint -f checkstyle "episodes/*.md" >> .textlint.log
@@ -163,7 +160,7 @@ jobs:
         # textlintで文章上のミスがあった場合のみ、reviewdogを実行させるようにする
         if: failure()
         env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           cat .textlint.log
           cat .textlint.log | reviewdog -f=checkstyle -name="textlint" -reporter="github-pr-review"
