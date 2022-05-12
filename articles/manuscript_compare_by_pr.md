@@ -113,23 +113,60 @@ Reviewdog をリポジトリに**飼う**ことで、ブラウザや textlint �
 ### 導入手順
 1.  `.\github\workflow\reviewdog.yml` **を作成し、以下の内容をペースト**
 ```yml:reviewdog.yml
+# This is a basic workflow to help you get started with Actions
+
 name: reviewdog
-on: [pull_request]
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  pull_request:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  textlint:
-    name: runner / textlint
+  reviewdog-github-check:
+    name: reviewdog (github-check)
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Install reviewdog
+        uses: reviewdog/action-setup@v1
         with:
-          submodules: true
-      - name: textlint-github-pr-review
-        uses: tsuyoshicho/action-textlint@v3
+          reviewdog_version: latest
+
+      - name: Install Dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: cache-node-modules
+        #stepsが失敗(文章の乱れ)した場合でもcacheを取得するようにする
+        uses: pat-s/always-upload-cache@v3
+        env:
+          cache-name: cache-node-modules
         with:
-          github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review
-          level: warning
-          textlint_flags: "episodes/**"
+          path: ~/.npm
+          key: node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            node-
+
+      - name: Install textlint
+        run:  'npm install --save-dev textlint textlint-rule-preset-smarthr textlint-rule-prh textlint-filter-rule-allowlist textlint-rule-aws-spellcheck'
+
+      - name: Execute textlint for Episode
+        run: |
+          npx textlint -f checkstyle "episodes/*.md" >> .textlint.log
+
+      - name: Run reviewdog
+        # textlintで文章上のミスがあった場合のみ、reviewdogを実行させるようにする
+        if: failure()
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cat .textlint.log
+          cat .textlint.log | reviewdog -f=checkstyle -name="textlint" -reporter="github-pr-review"
 ```
 2.  **デフォルトブランチ(通常はmaster または main)に コミット & プッシュ**
 これで導入は完了だ。
