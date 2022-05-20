@@ -1,0 +1,19 @@
+name: publish
+
+on:
+  schedule: # *1
+    - cron: '0 * * * *'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Publish articles *2
+      - uses: x-color/zenn-post-scheduler@v1.0.0
+      # Commit and Push published articles to main branch *3
+      - run: |
+          git config --local user.email 'action@github.com'
+          git config --local user.name 'GitHub Action'
+          git add -u articles
+          git diff --cached --quiet || git commit -m 'Publish articles' && git push origin main
