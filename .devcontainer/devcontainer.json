@@ -10,6 +10,12 @@
 		"args": { "VARIANT": "16-bullseye" }
 	},
 
+  "settings": {
+		"editor.formatOnSave": true,
+		"textlint.autoFixOnSave": true,
+		"textlint.run": "onType"
+	},
+
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -36,6 +42,8 @@
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node",
 	"features": {
-		"github-cli": "latest"
+		"github-cli": "latest",
+    "powershell": "latest",
+    "git": "latest"
 	}
 }
