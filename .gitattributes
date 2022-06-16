@@ -8,10 +8,10 @@ LICENSE eol=crlf
 *.json eol=crlf
 *.yml eol=crlf
 *.code-workspace eol=crlf
+*.svg eol=crlf
 *.gif binary
 *.jpeg binary
 *.jpg binary
 *.png binary
 *.gz binary
 *.jar binary
-*.svg binary
