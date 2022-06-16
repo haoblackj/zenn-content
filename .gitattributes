@@ -1,6 +1,8 @@
 * text=crlf
 
 LICENSE eol=crlf
+.textlintrc eol=crlf
+*Dockerfile eol=crlf
 .git* eol=crlf
 
 *.md eol=crlf
