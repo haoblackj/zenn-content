@@ -1,10 +1,17 @@
 * text=crlf
 
+LICENSE eol=crlf
+.git* eol=crlf
+
 *.md eol=crlf
+*.txt eol=crlf
 *.json eol=crlf
+*.yml eol=crlf
+*.code-workspace eol=crlf
 *.gif binary
 *.jpeg binary
 *.jpg binary
 *.png binary
 *.gz binary
 *.jar binary
+*.svg binary
