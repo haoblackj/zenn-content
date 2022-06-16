@@ -1,0 +1,10 @@
+* text=crlf
+
+*.md eol=crlf
+*.json eol=crlf
+*.gif binary
+*.jpeg binary
+*.jpg binary
+*.png binary
+*.gz binary
+*.jar binary
