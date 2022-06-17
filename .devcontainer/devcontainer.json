@@ -6,7 +6,10 @@
   "settings": {
     "editor.formatOnSave": true,
     "textlint.autoFixOnSave": true,
-    "textlint.run": "onType"
+    "textlint.run": "onType",
+    "files.associations": {
+      "*.md": "markdown"
+    }
   },
   // Configure tool-specific properties.
   "customizations": {
@@ -14,14 +17,15 @@
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-		"dbaeumer.vscode-eslint",
-		"github.vscode-pull-request-github",
-		"mhutchie.git-graph",
-		"knisterpeter.vscode-commitizen",
-		"taichi.vscode-textlint",
-		"negokaz.zenn-editor",
-		"eamodio.gitlens"
-	]
+        "dbaeumer.vscode-eslint",
+        "github.vscode-pull-request-github",
+        "mhutchie.git-graph",
+        "knisterpeter.vscode-commitizen",
+        "taichi.vscode-textlint",
+        "negokaz.zenn-editor",
+        "eamodio.gitlens",
+        "shd101wyy.markdown-preview-enhanced"
+      ]
     }
   },
   "portsAttributes": {
