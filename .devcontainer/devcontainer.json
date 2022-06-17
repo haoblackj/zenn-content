@@ -73,14 +73,15 @@
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-        "dbaeumer.vscode-eslint",
-        "github.vscode-pull-request-github",
-        "mhutchie.git-graph",
-        "knisterpeter.vscode-commitizen",
-        "taichi.vscode-textlint",
-        "negokaz.zenn-editor",
-        "eamodio.gitlens"
-      ]
+		"dbaeumer.vscode-eslint",
+		"github.vscode-pull-request-github",
+		"mhutchie.git-graph",
+		"knisterpeter.vscode-commitizen",
+		"taichi.vscode-textlint",
+		"negokaz.zenn-editor",
+		"eamodio.gitlens",
+		"EditorConfig.EditorConfig"
+	]
     }
   },
   "portsAttributes": {
