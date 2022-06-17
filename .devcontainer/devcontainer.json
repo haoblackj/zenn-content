@@ -48,7 +48,7 @@
       "**/themes/**": true,
       "**/GoogleDrive/**": true,
       "**/Dropbox/**": true,
-      "**/Pictures/**": true,
+      "**/Pictures/**": true
     },
     "git.ignoreSubmodules": true,
     "git.detectSubmodules": false,
