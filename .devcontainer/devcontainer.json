@@ -11,7 +11,11 @@
       "*.md": "markdown"
     },
     "git.autofetch": true,
-    "git.fetchOnPull": true
+    "git.fetchOnPull": true,
+    "git.autoRepositoryDetection": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.experimental.mergeEditor": true
   },
   // Configure tool-specific properties.
   "customizations": {
