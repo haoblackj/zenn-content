@@ -1,0 +1,99 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.238.0/containers/javascript-node
+{
+  "name": "zenn-contents",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-16-bullseye",
+  "settings": {
+    "editor.formatOnSave": true,
+    "textlint.autoFixOnSave": true,
+    "textlint.run": "onType",
+    "files.associations": {
+      "*.md": "markdown"
+    },
+    "git.autofetch": true,
+    "git.fetchOnPull": true,
+    "git.autoRepositoryDetection": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.experimental.mergeEditor": true,
+    "editor.detectIndentation": false,
+    "editor.comments.insertSpace": false,
+    "editor.tabSize": 2,
+    "gitlens.advanced.messages": {
+      "suppressGitMissingWarning": true
+    },
+    "git.ignoreMissingGitWarning": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.wordWrap": "bounded",
+    "textlint.languages": [
+      "novel",
+      "markdown",
+      "plaintext",
+      "html",
+      "tex",
+      "latex",
+      "doctex"
+    ],
+    "update.showReleaseNotes": false,
+    "files.autoSave": "afterDelay",
+    "git-graph.openNewTabEditorGroup": "Beside",
+    "githubPullRequests.fileListLayout": "flat",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.bracketPairColorization.enabled": true,
+    "textlint.trace": "messages",
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/node_modules/**": true,
+      "**/themes/**": true,
+      "**/GoogleDrive/**": true,
+      "**/Dropbox/**": true,
+      "**/Pictures/**": true
+    },
+    "git.ignoreSubmodules": true,
+    "git.detectSubmodules": false,
+    "files.autoSaveDelay": 5000,
+    "files.exclude": {
+      "/.git": true,
+      "/.DS_Store": true,
+      "/node_modules": true,
+      "/node_modules/": true
+    },
+    "search.exclude": {
+      "/node_modules": true
+    },
+    "gitlens.views.repositories.avatars": false,
+    "git.ignoreRebaseWarning": true,
+    "editor.semanticHighlighting.enabled": false,
+    "workbench.editor.enablePreview": false
+  },
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+		"dbaeumer.vscode-eslint",
+		"github.vscode-pull-request-github",
+		"mhutchie.git-graph",
+		"knisterpeter.vscode-commitizen",
+		"taichi.vscode-textlint",
+		"negokaz.zenn-editor",
+		"eamodio.gitlens",
+		"EditorConfig.EditorConfig"
+	]
+    }
+  },
+  "portsAttributes": {
+    "8000": {
+      "label": "Zenn Preview",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "npm ci",
+  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+  "remoteUser": "node"
+}
