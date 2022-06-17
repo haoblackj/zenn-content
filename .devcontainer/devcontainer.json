@@ -9,7 +9,9 @@
     "textlint.run": "onType",
     "files.associations": {
       "*.md": "markdown"
-    }
+    },
+    "git.autofetch": true,
+    "git.fetchOnPull": true
   },
   // Configure tool-specific properties.
   "customizations": {
