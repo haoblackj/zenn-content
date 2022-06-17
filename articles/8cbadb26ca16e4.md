@@ -4,7 +4,7 @@ emoji: " 📖 "
 type: "tech"
 topics: ["GitHub","VSCode","VSCode拡張機能","textlint","Tech"]
 published: true
-published_at: 2022/05/20 14:45
+published_at: 2022-05-20 14:45
 ---
 # 要点
 - 小説執筆環境を GitHub 上に整備した
