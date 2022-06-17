@@ -4,6 +4,7 @@ emoji: "📜"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["GitHub","textlint","Tech","小説","GitHubActions"]
 published: true
+published_at: 2022/05/20 14:45
 ---
 ##  謝辞
 先日、こんな記事を書いた。
