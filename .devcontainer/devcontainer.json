@@ -80,7 +80,9 @@
 		"taichi.vscode-textlint",
 		"negokaz.zenn-editor",
 		"eamodio.gitlens",
-		"EditorConfig.EditorConfig"
+		"EditorConfig.EditorConfig",
+		"PKief.material-icon-theme",
+		"KnisterPeter.vscode-commitizen"
 	]
     }
   },
