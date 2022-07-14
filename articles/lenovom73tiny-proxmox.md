@@ -1,0 +1,39 @@
+---
+title: "Proxmox VE 7 クラスタ構築した(Lenovo M73 Tiny × 2台)"
+emoji: "🐥"
+type: "tech" # tech: 技術記事 / idea: アイデア
+topics: ["proxmox","windowsserver"]
+published: false
+---
+
+# 要点
+- Proxmox VE クラスタ環境を構築した
+- Windows Server 2022 のテンプレートもあわせて作成した
+- ノードの IP アドレス変更時の作法は大事
+
+# 経緯
+先日、安く Lenovo M73 Tiny を 2 台仕入れた。
+自宅で稼働する物理 AD サーバがお亡くなりになったためだ。
+AD 以外は DNS と DHCP くらいしか動かしていないので、安っぽいお弁当箱型 PC でも問題ないと思ったのだ。
+
+しかし、M73 Tiny には落とし穴があった。
+Windows Server 2022 をそのままインストールすると、NIC を認識しないのである。
+Lenovo からドライバを調達してインストールしようとしたところ、 **「LAN ケーブルが刺さっていないから中断するね」** 旨のありがたいお言葉をいただいた。
+ベンダーコードのご厚情と思われる。
+
+書き換えも面倒だったので、前々から気になっていた Proxmox をインストールしてみることにした。
+すると思ったよりも簡単にできたので、手順書代わりに共有しようと思い立ったわけである。
+
+# 手順
+## 前提条件
+以下のものが必要になる。
+- Proxmox 用端末(Lenovo M73 Tiny)
+- 作業用 Windows 端末
+- USB メモリ(32GB もあれば十分です)
+- 仮想マシンの OS インストーラー(ISO ファイルのままで問題ありません)
+
+また、作業用 Windows 端末には次のソフトウェアが必要になる。
+- Rufus
+https://rufus.ie/ja/
+- Tera Term
+https://ja.osdn.net/projects/ttssh2/
