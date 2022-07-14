@@ -1,0 +1,13 @@
+services:
+
+  front:
+    command: sh -c "npm ci"
+    volumes:
+      # . に package.json などがある想定
+      - ./:/workspace
+
+      # node_modulesを名前付きボリュームに隠す
+      - front_node_modules:/workspace/node_modules
+
+volumes:
+  front_node_modules:
