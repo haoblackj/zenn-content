@@ -23,10 +23,10 @@
   "homepage": "https://github.com/haoblackj/zenn-content#readme",
   "dependencies": {
     "exsc": "gist:cc7ad5bc1a8417b57accb254f31be6a1",
-    "zenn-cli": "^0.1.113"
+    "zenn-cli": "^0.1.117"
   },
   "devDependencies": {
-    "textlint": "^12.1.1",
+    "textlint": "^12.2.1",
     "textlint-rule-preset-ja-spacing": "^2.2.0",
     "textlint-rule-preset-ja-technical-writing": "^7.0.0"
   }
