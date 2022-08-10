@@ -3,6 +3,9 @@
 {
   "name": "zenn-contents",
   "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-16-bullseye",
+  "appPort": [
+    8002
+  ],
   "settings": {
     "editor.formatOnSave": true,
     "textlint.autoFixOnSave": true,
@@ -73,19 +76,19 @@
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-		"dbaeumer.vscode-eslint",
-		"github.vscode-pull-request-github",
-		"mhutchie.git-graph",
-		"knisterpeter.vscode-commitizen",
-		"taichi.vscode-textlint",
-		"negokaz.zenn-editor",
-		"eamodio.gitlens",
-		"EditorConfig.EditorConfig"
-	]
+        "dbaeumer.vscode-eslint",
+        "github.vscode-pull-request-github",
+        "mhutchie.git-graph",
+        "knisterpeter.vscode-commitizen",
+        "taichi.vscode-textlint",
+        "negokaz.zenn-editor",
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig"
+      ]
     }
   },
   "portsAttributes": {
-    "8000": {
+    "8002": {
       "label": "Zenn Preview",
       "onAutoForward": "openBrowser"
     }
