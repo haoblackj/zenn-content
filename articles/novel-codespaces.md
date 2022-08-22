@@ -74,6 +74,8 @@ https://github.com/haoblackj/Novel-Template
 今回の記事は、下ツイートの求めに応じて執筆された。
 https://twitter.com/haoblackj/status/1561523605548122112
 
+ぶっちゃけ下書きのようなものである。
+
 # 最後に
 この記事は、下の GitHub Actions を用いて予約投稿している。
 https://github.com/x-color/zenn-post-scheduler
