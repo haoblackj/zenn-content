@@ -8,7 +8,7 @@ topics:
   - codespaces
   - Tech
 published: true
-published_at: 2022-08-22 14:40:00
+published_at: 2022-08-22 14:40
 ---
 
 # 概要
