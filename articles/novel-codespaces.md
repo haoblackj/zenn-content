@@ -4,7 +4,7 @@ emoji: "📌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["GitHub","VSCode","codespaces","Tech"]
 published: false
-published_at: 2022/08/22 14:40:00
+published_at: 2022-08-22 14:40:00
 ---
 
 # 概要
