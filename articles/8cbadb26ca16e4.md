@@ -158,6 +158,10 @@ PC の調子が悪くなったからといって、急いで USB メモリや外
 
 そのうち書きます。
 
-# 追記
+# 追記(2022-08-10)
 続編的立ち位置の記事を作成したので、こちらにも掲載しておく。
 https://zenn.dev/haoblackj/articles/manuscript_compare_by_pr
+
+# 追記(2022-08-22)
+執筆環境に手を加えた。記事を分けて紹介しているため、こちらにも掲載しておく。
+https://zenn.dev/haoblackj/articles/novel-codespaces
