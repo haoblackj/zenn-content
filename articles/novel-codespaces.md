@@ -1,9 +1,13 @@
 ---
-title: "GitHub Codespaces で小説を書く時代"
-emoji: "📌"
-type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["GitHub","VSCode","codespaces","Tech"]
-published: false
+title: GitHub Codespaces で小説を書く時代
+emoji: 📌
+type: tech
+topics:
+  - GitHub
+  - VSCode
+  - codespaces
+  - Tech
+published: true
 published_at: 2022/08/22 14:40:00
 ---
 
