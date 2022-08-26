@@ -150,6 +150,16 @@ Reviewdog のおかげで、出先でちょこちょこ原稿を修正し続け�
 ちなみに iPad で GitHub を使うなら、Safari で GitHub にログインして使用するか、2000 円少し課金することを前提に下記アプリを使うといい。
 https://apps.apple.com/jp/app/working-copy-git-client/id896694807
 
+:::message
+GitHub Codespaces を用いることで、アプリを購入することなく GitHub 下のリポジトリで作業できる。
+ブラウザ上で VSCode ライクな UI を使える。
+VSCode の設定や拡張機能も流用できる。
+下記の記事に、参考記事含め詳しく書いている。
+
+(2022 年 8 月 26 日追記)
+:::
+https://zenn.dev/haoblackj/articles/novel-codespaces
+
 # まとめ
 Pull Request 駆動で小説を執筆するようになると、情報をよりわかりやすく集約できたり、エディタとは別の校正プラットフォームを用意できたりする。
 特に後段で書いた Reviewdog を導入すれば、VSCode をインストールできない環境でも手軽に執筆できるようになる。
