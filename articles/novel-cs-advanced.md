@@ -16,6 +16,10 @@ published_at: 2022-12-29 14:40
 https://zenn.dev/haoblackj/articles/novel-codespaces
 できるだけこの記事単独で理解できるように説明をするが、ご一読いただいたほうが理解は早いと思われる。
 
+小説執筆環境については、以下の 2 記事を参照されたい。
+https://zenn.dev/haoblackj/articles/8cbadb26ca16e4
+https://zenn.dev/haoblackj/articles/manuscript_compare_by_pr
+
 # 執筆環境の抱える問題
 小説の執筆環境は大きく、複雑になりがちだ。
 VSCode で執筆をする者ほど、その傾向がある。
