@@ -68,7 +68,8 @@
     "gitlens.views.repositories.avatars": false,
     "git.ignoreRebaseWarning": true,
     "editor.semanticHighlighting.enabled": false,
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)"
   },
   // Configure tool-specific properties.
   "customizations": {
