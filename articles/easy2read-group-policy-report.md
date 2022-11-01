@@ -2,8 +2,8 @@
 title: "グループポリシーの設定内容をわかりやすく出力する方法"
 emoji: "🗂"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
-published: false
+topics: ["windows","activedirectory","grouppolicy"]
+published: true
 ---
 # 概要
 
@@ -46,7 +46,7 @@ Get-GPOReport -Name "<GPOの名前>" -ReportType HTML
 
 しんどいのでもう少し調べてみた。
 
-[Exporting GPO's to Excel - Microsoft Q&A](https://learn.microsoft.com/en-us/answers/questions/59083/exporting-gpo39s-to-excel.html)
+https://learn.microsoft.com/en-us/answers/questions/59083/exporting-gpo39s-to-excel.html
 
 上記のページで、次の言及がある。
 
@@ -56,7 +56,7 @@ Get-GPOReport -Name "<GPOの名前>" -ReportType HTML
 
 一緒に記載されているリンクは下記。
 
-[Get-GPOReport (GroupPolicy)](https://learn.microsoft.com/en-us/powershell/module/grouppolicy/get-gporeport?view=windowsserver2022-ps&viewFallbackFrom=win10-ps)
+https://learn.microsoft.com/en-us/powershell/module/grouppolicy/get-gporeport?view=windowsserver2022-ps&viewFallbackFrom=win10-ps
 
 HTML の際に使ったコマンドだが、オプションが違うようだ。
 
@@ -96,6 +96,6 @@ Get-GPOReport -All -ReportType XML
 
 ADRecon なんかもいいかなと思ったが、やっていることは大枠同じのようだ。
 
-[https://github.com/adrecon/ADRecon](https://github.com/adrecon/ADRecon)
+https://github.com/adrecon/ADRecon
 
 業務上の要請で諸々調べているうちに、キラキラ SIer はどういうドキュメントに起こしているのか興味が出てきた。
