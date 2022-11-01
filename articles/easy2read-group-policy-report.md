@@ -26,7 +26,7 @@ Get-GPO -All | ForEach-Object -Process {Get-GPOReport -GUID $_.ID -ReportType ht
 
 それぞれ Excel で開き、加工すればいい。
 
-![Untitled](%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A%E3%83%9B%E3%82%9A%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A%E5%86%85%E5%AE%B9%E3%82%92%E3%82%8F%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%202f74d79a4170468a9502614b4b25f812/Untitled.png)
+![](https://storage.googleapis.com/zenn-user-upload/41ff00817579-20221101.png)
 
 こんな感じ。パッと見にはキレイ。
 
@@ -68,19 +68,19 @@ Get-GPOReport -All -ReportType XML
 
 吐き出されたファイルを Excel で開くと、自動で表が作成される。
 
-![Untitled](%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A%E3%83%9B%E3%82%9A%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A%E5%86%85%E5%AE%B9%E3%82%92%E3%82%8F%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%202f74d79a4170468a9502614b4b25f812/Untitled%201.png)
+![](https://storage.googleapis.com/zenn-user-upload/e68728a5fea4-20221101.png)
 
 こんなのが出てきて、
 
-![Untitled](%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A%E3%83%9B%E3%82%9A%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A%E5%86%85%E5%AE%B9%E3%82%92%E3%82%8F%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%202f74d79a4170468a9502614b4b25f812/Untitled%202.png)
+![](https://storage.googleapis.com/zenn-user-upload/e5d453962666-20221101.png)
 
 適当に OK して、
 
-![Untitled](%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A%E3%83%9B%E3%82%9A%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A%E5%86%85%E5%AE%B9%E3%82%92%E3%82%8F%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%202f74d79a4170468a9502614b4b25f812/Untitled%203.png)
+![](https://storage.googleapis.com/zenn-user-upload/f0f1cc9fd6bd-20221101.png)
 
 まあいいんじゃないですかね。
 
-![Untitled](%E3%82%AF%E3%82%99%E3%83%AB%E3%83%BC%E3%83%95%E3%82%9A%E3%83%9B%E3%82%9A%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E8%A8%AD%E5%AE%9A%E5%86%85%E5%AE%B9%E3%82%92%E3%82%8F%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%202f74d79a4170468a9502614b4b25f812/Untitled%204.png)
+![](https://storage.googleapis.com/zenn-user-upload/efab8796a8bc-20221101.png)
 
 こんな感じ。
 
