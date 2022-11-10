@@ -20,8 +20,7 @@
 		"eamodio.gitlens",
 		"EditorConfig.EditorConfig",
 		"donjayamanne.githistory",
-		"GitHub.github-vscode-theme",
-		"zenn.zenn-preview"
+		"GitHub.github-vscode-theme"
 	]
     }
   },
