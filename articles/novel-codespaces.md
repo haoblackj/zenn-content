@@ -67,12 +67,9 @@ GitHub 上にローカルリポジトリを置いて都度アクセスするよ�
 Google Chrome などの Web ブラウザでも、VSCode とほぼ同じ見た目の画面でテキストを打ち込める。
 iPad や Android タブレットでもまともに小説を書ける時代が来たのだ。
 
-今のところ、個人プランで GitHub Codespaces を使用する場合は公式への申請が必要だ。
-申請後、早ければ数時間で使用できるようになる。
-有効化さえしてしまえば、あとはリポジトリごとに Codespace を作成できる。
-
-具体的な申請手順や使用手順、カスタマイズ方法は下を参考にしてほしい。
+具体的な使用手順、カスタマイズ方法は下を参考にしてほしい。
 https://zenn.dev/dzeyelid/articles/5485cdeb2a1ada
+https://zenn.dev/dzeyelid/articles/a30a98618c40bd
 
 現在、小説執筆テンプレートリポジトリを Codespaces へ対応させるべく修正作業を行っている。
 https://github.com/haoblackj/Novel-Template
