@@ -16,7 +16,7 @@
         "mhutchie.git-graph",
         "knisterpeter.vscode-commitizen",
         "taichi.vscode-textlint",
-        "negokaz.zenn-editor",
+        //"negokaz.zenn-editor",
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "donjayamanne.githistory",
