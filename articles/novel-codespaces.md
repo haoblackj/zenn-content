@@ -59,20 +59,17 @@ GitHub Codespaces が上記の問題をほぼ解決してくれた。
 設定ファイルに拡張機能 ID を記述するだけでいい。
 (Setting Sync の拡張機能同期はあらかじめ無効にしておく)
 - 環境設定ファイルの制御
-dotfiles^[そのうち書きます] というメソッドを用いて同期できる。
+`setting.json` を作成し、`.vscode` ディレクトリの中に格納することで同期できる。
 - リポジトリの制御
-GitHub 上にローカルリポジトリを置いて都度アクセスするような形なので、差異の生じる危険性が低減できる。
+GitHub 上の VM に都度アクセスするような形なので、差異の生じる危険性が低減できる。
 
 早い話が、GitHub 上にローカルリポジトリも置いて、端末を問わず使い回すという構図だ。
 Google Chrome などの Web ブラウザでも、VSCode とほぼ同じ見た目の画面でテキストを打ち込める。
 iPad や Android タブレットでもまともに小説を書ける時代が来たのだ。
 
-今のところ、個人プランで GitHub Codespaces を使用する場合は公式への申請が必要だ。
-申請後、早ければ数時間で使用できるようになる。
-有効化さえしてしまえば、あとはリポジトリごとに Codespace を作成できる。
-
-具体的な申請手順や使用手順、カスタマイズ方法は下を参考にしてほしい。
+具体的な使用手順、カスタマイズ方法は下を参考にしてほしい。
 https://zenn.dev/dzeyelid/articles/5485cdeb2a1ada
+https://zenn.dev/dzeyelid/articles/a30a98618c40bd
 
 現在、小説執筆テンプレートリポジトリを Codespaces へ対応させるべく修正作業を行っている。
 https://github.com/haoblackj/Novel-Template
