@@ -10,6 +10,7 @@
     "dotfiles.repository": "https://github.com/haoblackj/dotfiles.git",
     "dotfiles.targetPath": "~/dotfiles",
     "dotfiles.installCommand": "~/dotfiles/install.sh",
+    "terminal.integrated.defaultProfile.linux": "zsh",
   },
   // Configure tool-specific properties.
   "customizations": {
