@@ -6,6 +6,11 @@
   "appPort": [
     8002
   ],
+  "settings": {
+    "dotfiles.repository": "https://github.com/haoblackj/dotfiles.git",
+    "dotfiles.targetPath": "~/dotfiles",
+    "dotfiles.installCommand": "~/dotfiles/install.sh",
+  },
   // Configure tool-specific properties.
   "customizations": {
     // Configure properties specific to VS Code.
