@@ -113,8 +113,9 @@ textlint のルールを適宜追加インストールすることで、作品�
 https://marketplace.visualstudio.com/items?itemName=taichi.vscode-textlint
 これもオススメ。マストと言っても過言ではない。
 
-※追記(2023年1月23日)
+※追記(2023 年 1 月 23 日)
 また、8amjp 様作成の novel-builder.js の機能で、以下の項目についても自動で修正できる。
+
 ---
 * 行頭に全角スペースを挿入します。ただし、下記と一致する行を除きます。
   - 開き鉤括弧（「『）で始まる行
@@ -131,6 +132,7 @@ https://marketplace.visualstudio.com/items?itemName=taichi.vscode-textlint
 (以上、novel-builder README.md より該当箇所抜粋)
 
 なお、nove-builder.js の機能のうち、一部が適切に動作していないことがわかっている。
+
 ---
 * 鉤括弧の開きと閉じの書式が異なる場合、開きの鉤括弧の書式に統一します。
   - 「〜』という文が合った場合、「〜」に変換します。
