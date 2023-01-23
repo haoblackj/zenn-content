@@ -62,6 +62,7 @@
   "editor.semanticHighlighting.enabled": false,
   "workbench.editor.enablePreview": false,
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "remote.portsAttributes": {
     "8002": {
       "label": "Zenn Preview",
