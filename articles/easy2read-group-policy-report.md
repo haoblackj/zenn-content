@@ -42,6 +42,13 @@ Get-GPOReport -Name "<GPOの名前>" -ReportType HTML
 
 その際は上記のコマンドがおすすめ。
 
+### 2023 年 2 月 9 日追記
+全 GPO の情報を含んだ HTML ファイルを吐き出す引数があったようなので、追記する。
+```PowerShell
+Get-GPOReport -All -ReportType Html -Path "C:\Work\All-GPOs.html"
+```
+もうちょい踏み込んで調べておけばよかった。
+
 ## XMLをExcelで開いて加工
 
 しんどいのでもう少し調べてみた。
