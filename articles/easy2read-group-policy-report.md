@@ -29,6 +29,13 @@ Get-GPO -All | ForEach-Object -Process {Get-GPOReport -GUID $_.ID -ReportType ht
 ![](https://storage.googleapis.com/zenn-user-upload/41ff00817579-20221101.png)
 
 こんな感じ。パッと見にはキレイ。
+あとは全選択して、罫線を消したりフォントを統一したりハイパーリンクを消したり、どうとでもなる。
+体裁を整えて必要なところだけコピーして、PowerPoint に貼り付けたりもできる。
+
+:::message
+まだ PowerPoint で消耗してるの、とか言わない。
+言い方きつい。
+:::
 
 ただ、GPO の数だけ HTML ファイルが作成されるのはツラい。
 
@@ -48,6 +55,14 @@ Get-GPOReport -Name "<GPOの名前>" -ReportType HTML
 Get-GPOReport -All -ReportType Html -Path "C:\Work\All-GPOs.html"
 ```
 もうちょい踏み込んで調べておけばよかった。
+
+### 2023年2月15日 追記
+上記の全 GPO 情報 HTML 吐き出し PowerShell だが、吐き出された HTML ファイルを Excel で読み込むと先頭にある GPO しか読み込んでこないことがわかった。
+HTML の中身を見る限り、GPOReport の HTML ファイルをかなり雑に切り貼りしているだけに見える。
+
+Python でパースしようと思えばできそうだが、イチから Python を書くよりは、GPO をひとつずつ吐き出して Excel で開くほうが早そうと判断した。
+誰か GPOReport をパースしてくれるステキなスクリプトを書いてください。
+頼みましたよ。
 
 ## XMLをExcelで開いて加工
 
