@@ -23,7 +23,7 @@
   "homepage": "https://github.com/haoblackj/zenn-content#readme",
   "dependencies": {
     "exsc": "gist:cc7ad5bc1a8417b57accb254f31be6a1",
-    "zenn-cli": "^0.1.140"
+    "zenn-cli": "^0.1.141"
   },
   "devDependencies": {
     "textlint": "^13.3.1",
