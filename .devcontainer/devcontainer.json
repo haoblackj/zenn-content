@@ -6,12 +6,6 @@
   "appPort": [
     8002
   ],
-  "settings": {
-    "dotfiles.repository": "https://github.com/haoblackj/dotfiles.git",
-    "dotfiles.targetPath": "~/dotfiles",
-    "dotfiles.installCommand": "~/dotfiles/install.sh",
-    "terminal.integrated.defaultProfile.linux": "zsh",
-  },
   // Configure tool-specific properties.
   "customizations": {
     // Configure properties specific to VS Code.
@@ -27,9 +21,17 @@
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "donjayamanne.githistory",
-        "GitHub.github-vscode-theme"
-        //"zenn.zenn-preview"
-      ]
+        "GitHub.github-vscode-theme",
+        "GitHub.vscode-github-actions"
+      ],
+      "settings": {
+        "dotfiles.repository": "https://github.com/haoblackj/dotfiles.git",
+        "dotfiles.targetPath": "~/dotfiles",
+        "dotfiles.installCommand": "~/dotfiles/install.sh",
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "git.experimental.mergeEditor": true,
+        "update.showReleaseNotes": false
+      }
     }
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
