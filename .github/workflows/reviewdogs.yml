@@ -4,14 +4,15 @@ jobs:
   textlint:
     name: runner / textlint
     runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true
       - name: textlint-github-pr-review
-        uses: tsuyoshicho/action-textlint@v3
+        uses: haoblackj/action-textlint@v1.0.7
         with:
-          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           level: warning
           textlint_flags: "articles/**"
