@@ -37,3 +37,32 @@ Lenovo からドライバを調達してインストールしようとしたと�
 https://rufus.ie/ja/
 - Tera Term
 https://ja.osdn.net/projects/ttssh2/
+
+## BIOS 設定
+BIOS 設定は以下の通り。
+- UEFI モードで起動する
+- セキュアブートを無効にする
+- ネットワークブートを有効にする
+- ブートオーダーを USB に変更する
+
+## Proxmox のインストール
+USB メモリに Rufus で Proxmox の ISO ファイルを書き込む。
+書き込みが完了したら、USB メモリを M73 Tiny に挿入して起動する。
+インストーラーが起動したら、以下の通りに進める。
+- Install Proxmox VE
+- Accept license agreement
+- Select Target Device
+- Select Country
+- Set Root Password
+- Network
+  - Hostname: proxmox1
+  - IP Address:環境による
+  - Gateway:環境による
+  - DNS:環境による
+- Confirm Installation
+- Installation Progress
+- Reboot
+
+## ネットワーク設定
+Proxmox のインストールが完了したら、ブラウザで以下の URL にアクセスする。
+`https://[上記で設定したIPアドレス]:8006`
