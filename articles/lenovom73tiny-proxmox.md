@@ -28,15 +28,15 @@ Lenovo からドライバを調達してインストールしようとしたと�
 ## 前提条件
 以下のものが必要になる。
 - Proxmox 用端末(Lenovo M73 Tiny)
-- 作業用 Windows 端末
-- USB メモリ(32GB もあれば十分です)
+- 作業用 Windows 端末(Rufus と Tera Term が動けば OK)
+- USB メモリ(32GB もあれば十分)
 - 仮想マシンの OS インストーラー(ISO ファイルのままで問題ありません)
 
 また、作業用 Windows 端末には次のソフトウェアが必要になる。
 - Rufus
 https://rufus.ie/ja/
 - Tera Term
-https://ja.osdn.net/projects/ttssh2/
+https://github.com/TeraTermProject/osdn-download/releases
 
 ## BIOS 設定
 BIOS 設定は以下の通り。
