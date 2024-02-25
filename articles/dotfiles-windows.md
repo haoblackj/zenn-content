@@ -70,10 +70,9 @@ Windows のインストール先を選択するのは手動とする。
 なので、我々はこれを使う。
 https://github.com/AveYo/MediaCreationTool.bat
 このリポジトリを作業用 PC にクローンして、`MediaCreationTool.bat` を実行すると、いろいろな選択肢が出てくる。
-詳しくは README を読んでほしいが、たとえば、BAT ファイルを `11_23h2 Pro ja-JP x64 usb MediaCreationTool.bat` とリネームして実行すると、Windows 11 の Pro エディション、日本語、x64 ビルドの USB インストールメディアが作成される。
+詳しくは README を読んでほしいが、たとえば、BAT ファイルを `11_23h2 Pro ja-JP x64 usb MediaCreationTool.bat` とリネームして実行すると、`Windows 11 Pro エディション バージョン23H2、日本語、x64 ビルド` の USB インストールメディアが作成される。
 :::message
-USB メディアが完全ゼロタッチで作成できるわけではなく、作成先の USB メモリは選択しないといけない。
-別にそのくらいは手動でいいでしょう。
+自動で、とは言ったが、作成先の USB メモリは手動で選択しないといけない。
 我慢できんという人は、自分で DISM なり何なりで作成してください。
 :::
 そして、この USB メモリの中に、下記ページの要領で設定ファイルを格納する。
