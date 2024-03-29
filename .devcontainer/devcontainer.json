@@ -12,25 +12,25 @@
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
       "extensions": [
-		"github.vscode-pull-request-github",
-		"mhutchie.git-graph",
-		"knisterpeter.vscode-commitizen",
-		"taichi.vscode-textlint",
-		"ms-vsliveshare.vsliveshare",
-		"negokaz.zenn-editor",
-		"eamodio.gitlens",
-		"EditorConfig.EditorConfig",
-		"donjayamanne.githistory",
-		"GitHub.github-vscode-theme",
-		"GitHub.vscode-github-actions",
-		"GitHub.copilot",
-		"GitHub.copilot-labs",
-		"GitHub.copilot-chat"
-	],
+        "github.vscode-pull-request-github",
+        "mhutchie.git-graph",
+        "knisterpeter.vscode-commitizen",
+        "taichi.vscode-textlint",
+        "ms-vsliveshare.vsliveshare",
+        "negokaz.zenn-editor",
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig",
+        "donjayamanne.githistory",
+        "GitHub.github-vscode-theme",
+        "GitHub.vscode-github-actions",
+        "GitHub.copilot",
+        "GitHub.copilot-labs",
+        "GitHub.copilot-chat"
+      ],
       "settings": {
         "dotfiles.repository": "https://github.com/haoblackj/dotfiles.git",
         "dotfiles.targetPath": "~/dotfiles",
-        "dotfiles.installCommand": "~/dotfiles/install.sh",
+        "dotfiles.installCommand": "install.sh",
         "terminal.integrated.defaultProfile.linux": "zsh",
         "git.experimental.mergeEditor": true,
         "update.showReleaseNotes": false
