@@ -3,7 +3,7 @@ title: "小説の執筆環境で断舎離してみた"
 emoji: "🖋"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["GitHub","VSCode","VSCode拡張機能","textlint","Tech"]
-published: false
+published: true
 ---
 # 要点
 - 前記事の執筆時点からいろいろと環境が変わった
