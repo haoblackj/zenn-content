@@ -8,9 +8,11 @@
   },
   "filters": {
     "comments": true,
-    "allowlist": [
-      "/^::::/m"
-    ]
+    "allowlist": {
+      "allow": [
+        "/^:::/m"
+      ]
+    }
   },
   "rules": {
     "preset-ja-technical-writing": {
@@ -34,12 +36,6 @@
         "before": true,
         "after": true
       }
-    },
-    "ja-technical-writing/ja-no-mixed-period": {
-      "allowPeriodMarks": [
-        ":"
-      ]
-    },
-    "ja-technical-writing/sentence-length": false
+    }
   }
 }
