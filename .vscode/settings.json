@@ -61,12 +61,15 @@
   "git.ignoreRebaseWarning": true,
   "editor.semanticHighlighting.enabled": false,
   "workbench.editor.enablePreview": false,
-  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+  "workbench.colorTheme": "Bear Theme",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "remote.portsAttributes": {
     "8002": {
       "label": "Zenn Preview",
       "onAutoForward": "openBrowser"
     }
-  }
+  },
+  "pasteImage.basePath": "${projectRoot}",
+  "pasteImage.insertPattern": "${imageSyntaxPrefix}/${imageFilePath}${imageSyntaxSuffix}",
+  "pasteImage.path": "${projectRoot}/images/${currentFileNameWithoutExt}"
 }
