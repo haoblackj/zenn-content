@@ -4,6 +4,7 @@ emoji: "🪟"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["komorebi", "windows", "windowmanager"]
 published: false
+published_at: 2024/12/10 08:55:00
 ---
 
 <!-- textlint-disable -->
