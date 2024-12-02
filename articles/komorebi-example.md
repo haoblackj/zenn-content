@@ -14,7 +14,9 @@ published: false
 `komorebi` というタイル型ウィンドウマネージャがある。
 奇特にも Windows に特化した WM だ。
 悲しいことに、`komorebi` という名前がついているのに日本語の情報が少ない。
-なのでこの記事では、`komorebi` の設定例を紹介することにした。
+公式でも、機能によっては動画解説だけだったりもする。
+
+なので、この記事で `komorebi` の設定例を紹介することにした。
 
 # インストール
 `winget` もしくは `scoop` でインストールできる。
@@ -22,7 +24,7 @@ published: false
 古式ゆかしい `AutoHotkey` でも動作するらしいが、私は既存で `AutoHotkey` を使っているので、採用しなかった。
 詳しくは[公式サイト](https://lgug2z.github.io/komorebi/installation.html)をチェックだ。
 
-Windows でたまに取り沙汰される『パスの最大長の設定』についても記載があるので、任意に設定するとよろしい。私はしていない。
+Windows でたまに取り沙汰される『パスの最大長の設定』についても記載があるので、任意に設定するとよろしい。私はしてない。
 アニメーション無効化についての推奨設定についても記載があるが、これも任意だ。
 
 # 起動
@@ -138,6 +140,15 @@ Windows でたまに取り沙汰される『パスの最大長の設定』につ
     - `name` : ワークスペースの名前を指定する
     - `layout` : レイアウトを指定する。`komorebi` にはいくつかのデフォルトレイアウトがあるので、それを使うとよい。詳しくは[ここ](https://lgug2z.github.io/komorebi/example-configurations.html#layouts)を参照。
 - `display_index_preferences`: モニターのインデックスとディスプレイの ID の対応表。ディスプレイの ID は `komorebic monitor-information` で取得できる^[とっても紛らわしいが、慣れがすべてを解決する]。
+
+`komorebi.json` は設定変更をかければ、基本的には即時反映される。
+時折反映されないことがあるので、下記コマンドで再読み込みするのが確実。
+```powershell
+komorebic stop --whkd --bar; komorebic start --whkd --bar
+```
+後述の `bar` 関連の設定などは、ほぼ再読み込みしないと反映されない。
+`whkd` に至っては、OS を再起動しないと反映されないこともしばしばだ。
+Windows では再起動はすべてを解決する。
 
 # 設定例(bar)
 `komorebi` にはステータスバー機能がある。
@@ -340,4 +351,4 @@ $Env:WHKD_CONFIG_HOME = "C:\Users\$($env:USERNAME)\.config\whkd"
 
 それでも、キーボード操作ひとつでウィンドウサイズや位置を調整できるというのは、Windows デフォルト状態では望むべくもない快適さだ。
 
-日本語由来の名前ということもあるし、日本語圏でもっとユーザと情報が増えることを期待している。
+みんなも使おう。
