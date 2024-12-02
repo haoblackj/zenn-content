@@ -61,6 +61,7 @@ https://www.microsoft.com/ja-jp/software-download/windows11
 せめて、インストールするエディションの選択くらいは自動化しておいてほしい。
 欲を言えば、インストールするビルドも指定したい。
 
+<!-- textlint-disable -->
 :::message
 Windows のインストール先を選択するのは手動とする。
 物理ディスクが 1 本なら迷うことはない(最悪インストールメディアが吹っ飛ぶだけ)が、複数のディスクがある場合は、ディスクを取り違えると悲惨なことになる。
@@ -71,6 +72,7 @@ Windows のインストール先を選択するのは手動とする。
 https://github.com/AveYo/MediaCreationTool.bat
 このリポジトリを作業用 PC にクローンして、`MediaCreationTool.bat` を実行すると、いろいろな選択肢が出てくる。
 詳しくは README を読んでほしいが、たとえば、BAT ファイルを `11_23h2 Pro ja-JP x64 usb MediaCreationTool.bat` とリネームして実行すると、`Windows 11 Pro エディション バージョン23H2、日本語、x64 ビルド` の USB インストールメディアが作成される。
+<!-- textlint-enable -->
 :::message
 自動で、とは言ったが、作成先の USB メモリは手動で選択しないといけない。
 我慢できんという人は、自分で DISM なり何なりで作成してください。
