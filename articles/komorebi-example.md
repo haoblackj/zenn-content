@@ -235,6 +235,11 @@ Windows では再起動はすべてを解決する。
 
 他にもいくつかのウィジェットがあるので、[公式ドキュメント](https://lgug2z.github.io/komorebi/example-configurations.html#komorebibarjson)を参照するとよい。
 
+また、`komorebi` で取得した情報を表示できる別のバーやトレイ表示アプリも存在するので、見た目や機能に特にこだわりがあれば、探してみるのもよい。
+幸い、公式が[このようなリポジトリ](https://github.com/LGUG2Z/awesome-komorebi)を用意してくれている。
+
+※加筆のためにあらためてリポジトリを確認したら、チュートリアルとしてこの記事が紹介されていた。汗顔の至りだ。
+
 # 設定例(whkd)
 `komorebi` をキーボードから制御するには、`whkd` が必要だ。
 `whkdrc` に下記を保存すれば、`komorebi` をキーボードから制御できる。
@@ -342,6 +347,14 @@ $Env:WHKD_CONFIG_HOME = "C:\Users\$($env:USERNAME)\.config\whkd"
 上記を `Microsoft.PowerShell_profile.ps1` に追記して、ドキュメントフォルダの下記に保存する。
 - PowerShell 7: `C:\Users\<ユーザ名>\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
 - PowerShell 5: `C:\Users\<ユーザ名>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+
+<!-- textlint-disable -->
+:::message
+`~profile.ps1` を使う際、OneDrive でドキュメントフォルダを同期しないほうがいいらしい。
+OneDrive で同期するとドキュメントフォルダのパスが(勝手に!!)変わるためと思われる。
+少なくとも私の設定している範囲では、 `~profile.ps1` を OneDrive で同期しても問題なかった。
+:::
+<!-- textlint-enable -->
 
 # おわりに
 `komorebi` は Windows でタイル型ウィンドウマネージャを使うという奇特な試みの地平線だ。
