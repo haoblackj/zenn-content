@@ -2,7 +2,7 @@
 title: "komorebiの設定例"
 emoji: "🪟"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["komorebi", "windows", "windowmanager", "contest2024]
+topics: ["komorebi", "windows", "windowmanager", "contest2024"]
 published: true
 published_at: 2024-12-10 08:55
 ---
