@@ -3,7 +3,7 @@ title: "小説執筆リポジトリの今"
 emoji: "✒"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["GitHub","VSCode","VSCode拡張機能","textlint","Tech"]
-published: false
+published: true
 ---
 # 要点
 - 前記事からの変更点
