@@ -26,10 +26,10 @@ https://marketplace.visualstudio.com/items?itemName=TaiyoFujii.novel-writer
 しかし 2025 年 6 月現在、`novel-writer` 自体に `vivliostyle` が含まれている。
 そのため、`vivliostyle` の手動インストールは不要になった。
 
-なお、`vivliostyle` のインストールはリポジトリのセットアップとは別の dotfiles にて行っていたため、テンプレートリポジトリには反映されていない。
+なお、`vivliostyle` のインストールはリポジトリのセットアップとは別の `dotfiles` にて行っていたため、テンプレートリポジトリには反映されていない。
 
 :::message alert
-`novel-writer` の機能に `vivliostyle` が含まれているのは、バージョン 3.2.0 以降である。
+`novel-writer` の機能に `vivliostyle` が含まれているのは、バージョン `3.2.0` 以降である。
 また、PDF 出力には依然として `Node.js` のインストールが必要である。
 記事冒頭のテンプレートリポジトリも、`Node.js` がインストールされていることを前提にしている。
 :::
