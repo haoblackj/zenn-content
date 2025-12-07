@@ -61,9 +61,9 @@ SoftEther VPNも用意しているが、普段は使わず緊急時用。持ち�
 
 # こだわりポイント
 とにかくバックアップだ！
-Proxmox VEのVMはProxmox Backup Serverで主要VMを毎日バックアップ。
-Synology DS918+のActive Backup for Businessで、メインマシンを毎日バックアップ。
-DS918+自体もHyper Backupで外部ストレージに日1回バックアップ。
+Proxmox VE の VM は Proxmox Backup Server で主要 VM を毎日バックアップ。
+Synology DS918+の Active Backup for Business で、メインマシンを毎日バックアップ。
+DS918+自体も Hyper Backup で外部ストレージに日 1 回バックアップ。
 
 LibreChatには過去からのやり取り履歴が連綿と積み重なっているので、データベースバックアップには特に気を使っている。
 Ubuntu VM上で定期的にデータベースダンプを取得し、VMごとProxmox Backup Serverでバックアップ。DS918+にもVM内から別途バックアップを保存している。
