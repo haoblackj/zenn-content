@@ -20,7 +20,7 @@ ThinkCentre M73 Tiny (3 台)
 - CPU: Intel Core i3-4170T
 - RAM: 16GB (増設)
 - ストレージ: 500GB SSD
-- ネットワーク: 有線LAN
+- ネットワーク: 有線 LAN
 
 Dell製中古ゲーミングPC (1台)
 - CPU: Intel Core i7-7700
