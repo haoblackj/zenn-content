@@ -65,9 +65,9 @@ Proxmox VE の VM は Proxmox Backup Server で主要 VM を毎日バックア�
 Synology DS918+の Active Backup for Business で、メインマシンを毎日バックアップ。
 DS918+自体も Hyper Backup で外部ストレージに日 1 回バックアップ。
 
-LibreChatには過去からのやり取り履歴が連綿と積み重なっているので、データベースバックアップには特に気を使っている。
-Ubuntu VM上で定期的にデータベースダンプを取得し、VMごとProxmox Backup Serverでバックアップ。DS918+にもVM内から別途バックアップを保存している。
-OpenWebUIにはバックアップ機能がなく、データベースをコンテナとして分離もできないので、コンテナの永続ボリュームをVMごとProxmox Backup Serverでバックアップしている。
+LibreChat には過去からのやり取り履歴が連綿と積み重なっているので、データベースバックアップには特に気を使っている。
+Ubuntu VM 上で定期的にデータベースダンプを取得し、VM ごと Proxmox Backup Server でバックアップ。DS918+にも VM 内から別途バックアップを保存している。
+OpenWebUI にはバックアップ機能がなく、データベースをコンテナとして分離もできないので、コンテナの永続ボリュームを VM ごと Proxmox Backup Server でバックアップしている。
 
 メインマシンや持ち出しPCはActive Directoryに参加させ、グループポリシーで各種設定を一元管理。
 いつどうなってもいいようにしている。
