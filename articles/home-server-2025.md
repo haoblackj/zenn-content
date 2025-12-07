@@ -22,7 +22,7 @@ ThinkCentre M73 Tiny (3 台)
 - ストレージ: 500GB SSD
 - ネットワーク: 有線 LAN
 
-Dell製中古ゲーミングPC (1台)
+Dell 製中古ゲーミング PC (1 台)
 - CPU: Intel Core i7-7700
 - RAM: 32GB
 - ストレージ: 1TB SSD + 2TB HDD
