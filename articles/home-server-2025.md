@@ -3,7 +3,7 @@ title: "自宅サーバ2025"
 emoji: "🏠"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["自宅サーバ","Proxmox"]
-published: false
+published: true
 ---
 
 <!-- textlint-disable -->
