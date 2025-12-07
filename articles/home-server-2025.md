@@ -16,7 +16,7 @@ published: false
 
 # 構成
 ## ハードウェア
-ThinkCentre M73 Tiny (3台)
+ThinkCentre M73 Tiny (3 台)
 - CPU: Intel Core i3-4170T
 - RAM: 16GB (増設)
 - ストレージ: 500GB SSD
