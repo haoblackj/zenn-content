@@ -26,7 +26,7 @@ Dell 製中古ゲーミング PC (1 台)
 - CPU: Intel Core i7-7700
 - RAM: 32GB
 - ストレージ: 1TB SSD + 2TB HDD
-- ネットワーク: 有線LAN
+- ネットワーク: 有線 LAN
 
 Synology DS918+ (1台)
 - ストレージ: 4 x 4TB HDD (Synology Hybrid RAID)
