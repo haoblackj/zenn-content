@@ -28,7 +28,7 @@ Dell 製中古ゲーミング PC (1 台)
 - ストレージ: 1TB SSD + 2TB HDD
 - ネットワーク: 有線 LAN
 
-Synology DS918+ (1台)
+Synology DS918+ (1 台)
 - ストレージ: 4 x 4TB HDD (Synology Hybrid RAID)
 
 ## ソフトウェア
@@ -39,25 +39,25 @@ Synology DS918+ (1台)
 - Dashy (ダッシュボード)
 - Prometheus + Grafana (監視)
 - Portainer (コンテナ管理)
-- LibreChat (LLMチャットサービス)
-- OpenWebUI (LLMチャットサービス)
+- LibreChat (LLM チャットサービス)
+- OpenWebUI (LLM チャットサービス)
 - Cloudflare Tunnel + Access (リバースプロキシ)
-- SoftEther VPN (VPNサービス)
+- SoftEther VPN (VPN サービス)
 
 # 経緯
-新卒の頃は手元のPCのHyper-Vで満足できていたのが、Synology DS918+を購入したのがケチのつき始め。
-やっぱりVMはNASにバックアップしてナンボだよな、といろいろ仮想環境について調べ始め、Proxmox VEにたどり着く。
-ThinkCentre M73 Tinyがタダみたいな値段で売っていたので 3 台購入し、Proxmox VEクラスタを構築。
-その後、やっぱりタダみたいな値段で売っていたDell製中古ゲーミングPCを購入し、Proxmox VEクラスタに追加。こいつには主にDockerコンテナを取りまとめたUbuntu VMを載せている。
-DS918+はストレージ専用機として、Proxmox VEクラスタやメインマシンのバックアップ先として活躍中。Cloudflaredの予備コンテナも動かしている。
+新卒の頃は手元の PC の Hyper-V で満足できていたのが、Synology DS918+を購入したのがケチのつき始め。
+やっぱり VM は NAS にバックアップしてナンボだよな、といろいろ仮想環境について調べ始め、Proxmox VE にたどり着く。
+ThinkCentre M73 Tiny がタダみたいな値段で売っていたので 3 台購入し、Proxmox VE クラスタを構築。
+その後、やっぱりタダみたいな値段で売っていた Dell 製中古ゲーミング PC を購入し、Proxmox VE クラスタに追加。こいつには主に Docker コンテナを取りまとめた Ubuntu VM を載せている。
+DS918+はストレージ専用機として、Proxmox VE クラスタやメインマシンのバックアップ先として活躍中。Cloudflared の予備コンテナも動かしている。
 
 # 運用方針
 できるだけ手をかけず安定稼働。これしかありますまい。
-DockerコンテナはPortainerで管理し、VMはProxmox VEのWebUIで管理。なるべくコマンドラインには触らない。本職じゃないので。
-VMのバックアップはProxmox Backup Serverを使い、DellPCのHDD経由でDS918+に保存。毎日フルバックアップだ。重複排除はProxmox Backup Serverにお任せ。
-監視はPrometheus + Grafanaで行い、異常があればメールで通知されるようにしている。
-外部からのアクセスはCloudflare Tunnel + Accessのみに限定し、M365認証を併用してセキュリティを確保。
-SoftEther VPNも用意しているが、普段は使わず緊急時用。持ち出しPCに入れていなくて焦るところまでセット。
+Docker コンテナは Portainer で管理し、VM は Proxmox VE の WebUI で管理。なるべくコマンドラインには触らない。本職じゃないので。
+VM のバックアップは Proxmox Backup Server を使い、DellPC の HDD 経由で DS918+に保存。毎日フルバックアップだ。重複排除は Proxmox Backup Server にお任せ。
+監視は Prometheus + Grafana で行い、異常があればメールで通知されるようにしている。
+外部からのアクセスは Cloudflare Tunnel + Access のみに限定し、M365 認証を併用してセキュリティを確保。
+SoftEther VPN も用意しているが、普段は使わず緊急時用。持ち出し PC に入れていなくて焦るところまでセット。
 
 # こだわりポイント
 とにかくバックアップだ！
